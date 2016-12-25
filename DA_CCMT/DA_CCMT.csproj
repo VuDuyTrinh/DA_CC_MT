@@ -77,8 +77,17 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="PagedList, Version=1.17.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.1.17.0.0\lib\net40\PagedList.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PagedList.Mvc, Version=4.5.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.Mvc.4.5.0.0\lib\net40\PagedList.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -198,18 +207,25 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\TrangChuController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\QLNH.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLNH.dbml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\PagedList.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -220,6 +236,11 @@
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Models\QLNH.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>QLNH.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -233,6 +254,123 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
+    <Content Include="themes\amelia\bootstrap.css" />
+    <Content Include="themes\amelia\bootstrap.min.css" />
+    <Content Include="themes\bootshop\bootstrap.min.css" />
+    <Content Include="themes\businessltd\bootstrap.min.css" />
+    <Content Include="themes\cerulean\bootstrap.min.css" />
+    <Content Include="themes\css\base.css" />
+    <Content Include="themes\css\bootstrap-responsive.min.css" />
+    <Content Include="themes\css\font-awesome-ie7.css" />
+    <Content Include="themes\css\font-awesome.css" />
+    <Content Include="themes\cyborg\bootstrap.min.css" />
+    <Content Include="themes\font\fontawesome-webfont.svg" />
+    <Content Include="themes\images\carousel\s1.jpg" />
+    <Content Include="themes\images\carousel\s2.jpg" />
+    <Content Include="themes\images\carousel\s3.jpg" />
+    <Content Include="themes\images\facebook.png" />
+    <Content Include="themes\images\headerRepeat.png" />
+    <Content Include="themes\images\ico-cart.png" />
+    <Content Include="themes\images\ico\apple-touch-icon-114-precomposed.png" />
+    <Content Include="themes\images\ico\apple-touch-icon-144-precomposed.png" />
+    <Content Include="themes\images\ico\apple-touch-icon-57-precomposed.png" />
+    <Content Include="themes\images\ico\apple-touch-icon-72-precomposed.png" />
+    <Content Include="themes\images\ico\favicon.ico" />
+    <Content Include="themes\images\lightbox\Close.png" />
+    <Content Include="themes\images\lightbox\lightbox-blank.gif" />
+    <Content Include="themes\images\lightbox\lightbox-btn-close.gif" />
+    <Content Include="themes\images\lightbox\lightbox-btn-next.gif" />
+    <Content Include="themes\images\lightbox\lightbox-btn-prev.gif" />
+    <Content Include="themes\images\lightbox\lightbox-ico-loading.gif" />
+    <Content Include="themes\images\logo1.png" />
+    <Content Include="themes\images\new.png" />
+    <Content Include="themes\images\payment_methods.png" />
+    <Content Include="themes\images\products\1.jpg" />
+    <Content Include="themes\images\products\10.jpg" />
+    <Content Include="themes\images\products\11.jpg" />
+    <Content Include="themes\images\products\12.jpg" />
+    <Content Include="themes\images\products\13.jpg" />
+    <Content Include="themes\images\products\2.jpg" />
+    <Content Include="themes\images\products\3.jpg" />
+    <Content Include="themes\images\products\4.jpg" />
+    <Content Include="themes\images\products\5.jpg" />
+    <Content Include="themes\images\products\6.jpg" />
+    <Content Include="themes\images\products\7.jpg" />
+    <Content Include="themes\images\products\8.jpg" />
+    <Content Include="themes\images\products\9.jpg" />
+    <Content Include="themes\images\products\b1.jpg" />
+    <Content Include="themes\images\products\b2.jpg" />
+    <Content Include="themes\images\products\b3.jpg" />
+    <Content Include="themes\images\products\b4.jpg" />
+    <Content Include="themes\images\products\kindle.png" />
+    <Content Include="themes\images\products\large\3.jpg" />
+    <Content Include="themes\images\products\large\f1.jpg" />
+    <Content Include="themes\images\products\large\f2.jpg" />
+    <Content Include="themes\images\products\large\f3.jpg" />
+    <Content Include="themes\images\products\panasonic.jpg" />
+    <Content Include="themes\images\search.png" />
+    <Content Include="themes\images\tabRepeatInactive.png" />
+    <Content Include="themes\images\twitter.png" />
+    <Content Include="themes\images\youtube.png" />
+    <Content Include="themes\img\glyphicons-halflings-white.png" />
+    <Content Include="themes\img\glyphicons-halflings.png" />
+    <Content Include="themes\journal\bootstrap.min.css" />
+    <Content Include="themes\js\bootshop.js" />
+    <Content Include="themes\js\bootstrap.min.js" />
+    <Content Include="themes\js\google-code-prettify\prettify.css" />
+    <Content Include="themes\js\google-code-prettify\prettify.js" />
+    <Content Include="themes\js\jquery.js" />
+    <Content Include="themes\js\jquery.lightbox-0.5.js" />
+    <Content Include="themes\js\less.js" />
+    <Content Include="themes\readable\bootstrap.min.css" />
+    <Content Include="themes\simplex\bootstrap.min.css" />
+    <Content Include="themes\slate\bootstrap.min.css" />
+    <Content Include="themes\spacelab\bootstrap.min.css" />
+    <Content Include="themes\spruce\bootstrap.css" />
+    <Content Include="themes\spruce\bootstrap.min.css" />
+    <Content Include="themes\superhero\bootstrap.min.css" />
+    <Content Include="themes\switch\images\clr\amelia.png" />
+    <Content Include="themes\switch\images\clr\bootshop.png" />
+    <Content Include="themes\switch\images\clr\businessltd.png" />
+    <Content Include="themes\switch\images\clr\cerulean.png" />
+    <Content Include="themes\switch\images\clr\cyborg.png" />
+    <Content Include="themes\switch\images\clr\journal.png" />
+    <Content Include="themes\switch\images\clr\readable.png" />
+    <Content Include="themes\switch\images\clr\simplex.png" />
+    <Content Include="themes\switch\images\clr\slate.png" />
+    <Content Include="themes\switch\images\clr\spacelab.png" />
+    <Content Include="themes\switch\images\clr\spruce.png" />
+    <Content Include="themes\switch\images\clr\superhero.png" />
+    <Content Include="themes\switch\images\clr\united.png" />
+    <Content Include="themes\switch\images\hideme.png" />
+    <Content Include="themes\switch\images\pattern\pattern1.png" />
+    <Content Include="themes\switch\images\pattern\pattern10.png" />
+    <Content Include="themes\switch\images\pattern\pattern11.png" />
+    <Content Include="themes\switch\images\pattern\pattern12.png" />
+    <Content Include="themes\switch\images\pattern\pattern13.png" />
+    <Content Include="themes\switch\images\pattern\pattern14.png" />
+    <Content Include="themes\switch\images\pattern\pattern15.png" />
+    <Content Include="themes\switch\images\pattern\pattern16.png" />
+    <Content Include="themes\switch\images\pattern\pattern16~.png" />
+    <Content Include="themes\switch\images\pattern\pattern17.png" />
+    <Content Include="themes\switch\images\pattern\pattern17~.png" />
+    <Content Include="themes\switch\images\pattern\pattern18.png" />
+    <Content Include="themes\switch\images\pattern\pattern19.png" />
+    <Content Include="themes\switch\images\pattern\pattern19~.png" />
+    <Content Include="themes\switch\images\pattern\pattern2.png" />
+    <Content Include="themes\switch\images\pattern\pattern20.png" />
+    <Content Include="themes\switch\images\pattern\pattern20~.png" />
+    <Content Include="themes\switch\images\pattern\pattern3.png" />
+    <Content Include="themes\switch\images\pattern\pattern4.png" />
+    <Content Include="themes\switch\images\pattern\pattern5.png" />
+    <Content Include="themes\switch\images\pattern\pattern6.png" />
+    <Content Include="themes\switch\images\pattern\pattern7.png" />
+    <Content Include="themes\switch\images\pattern\pattern8.png" />
+    <Content Include="themes\switch\images\pattern\pattern9.png" />
+    <Content Include="themes\switch\images\styleTgl.png" />
+    <Content Include="themes\switch\theamswitcher.js" />
+    <Content Include="themes\switch\themeswitch.css" />
+    <Content Include="themes\united\bootstrap.min.css" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -267,6 +405,72 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\TrangChu\Index.cshtml" />
+    <Content Include="Views\Shared\LayoutAdmin.cshtml" />
+    <Content Include="Views\Shared\layoutchung.cshtml" />
+    <Content Include="Views\Shared\LayOutUser.cshtml" />
+    <Content Include="Views\TrangChu\Hang.cshtml" />
+    <Content Include="themes\font\fontawesome-webfont.eot" />
+    <Content Include="themes\font\fontawesome-webfont.ttf" />
+    <Content Include="themes\font\fontawesome-webfont.woff" />
+    <Content Include="themes\font\museo_slab_300-webfont.eot" />
+    <Content Include="themes\font\museo_slab_300-webfont.ttf" />
+    <Content Include="themes\font\museo_slab_500-webfont.eot" />
+    <Content Include="themes\font\museo_slab_500-webfont.ttf" />
+    <Content Include="themes\font\proximanova-webfont.eot" />
+    <Content Include="themes\font\proximanova-webfont.ttf" />
+    <Content Include="themes\less\accordion.less" />
+    <Content Include="themes\less\alerts.less" />
+    <Content Include="themes\less\amelia.less" />
+    <Content Include="themes\less\amelia\bootswatch.less" />
+    <Content Include="themes\less\amelia\variables.less" />
+    <Content Include="themes\less\bootshop.less" />
+    <Content Include="themes\less\bootshop\main.less" />
+    <Content Include="themes\less\bootshop\variables.less" />
+    <Content Include="themes\less\bootstrap.less" />
+    <Content Include="themes\less\breadcrumbs.less" />
+    <Content Include="themes\less\button-groups.less" />
+    <Content Include="themes\less\buttons.less" />
+    <Content Include="themes\less\carousel.less" />
+    <Content Include="themes\less\classified.less" />
+    <Content Include="themes\less\close.less" />
+    <Content Include="themes\less\code.less" />
+    <Content Include="themes\less\component-animations.less" />
+    <Content Include="themes\less\dropdowns.less" />
+    <Content Include="themes\less\font-awesome-ie7.less" />
+    <Content Include="themes\less\font-awesome.less" />
+    <Content Include="themes\less\forms.less" />
+    <Content Include="themes\less\grid.less" />
+    <Content Include="themes\less\hero-unit.less" />
+    <Content Include="themes\less\labels-badges.less" />
+    <Content Include="themes\less\layouts.less" />
+    <Content Include="themes\less\mixins.less" />
+    <Content Include="themes\less\modals.less" />
+    <Content Include="themes\less\navbar.less" />
+    <Content Include="themes\less\navs.less" />
+    <Content Include="themes\less\pager.less" />
+    <Content Include="themes\less\pagination.less" />
+    <Content Include="themes\less\popovers.less" />
+    <Content Include="themes\less\progress-bars.less" />
+    <Content Include="themes\less\reset.less" />
+    <Content Include="themes\less\responsive-1200px-min.less" />
+    <Content Include="themes\less\responsive-767px-max.less" />
+    <Content Include="themes\less\responsive-768px-979px.less" />
+    <Content Include="themes\less\responsive-navbar.less" />
+    <Content Include="themes\less\responsive-utilities.less" />
+    <Content Include="themes\less\responsive.less" />
+    <Content Include="themes\less\scaffolding.less" />
+    <Content Include="themes\less\simplex.less" />
+    <Content Include="themes\less\simplex\bootswatch.less" />
+    <Content Include="themes\less\simplex\variables.less" />
+    <Content Include="themes\less\sprites.less" />
+    <Content Include="themes\less\tables.less" />
+    <Content Include="themes\less\thumbnails.less" />
+    <Content Include="themes\less\tooltip.less" />
+    <Content Include="themes\less\type.less" />
+    <Content Include="themes\less\utilities.less" />
+    <Content Include="themes\less\variables.less" />
+    <Content Include="themes\less\wells.less" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="admin\" />
@@ -279,6 +483,14 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Models\QLNH.dbml.layout">
+      <DependentUpon>QLNH.dbml</DependentUpon>
+    </None>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
