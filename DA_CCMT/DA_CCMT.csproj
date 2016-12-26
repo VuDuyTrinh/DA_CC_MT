@@ -499,6 +499,7 @@
     <Content Include="themes\less\utilities.less" />
     <Content Include="themes\less\variables.less" />
     <Content Include="themes\less\wells.less" />
+    <Content Include="Views\TrangChu\ChoNam.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="admin\" />

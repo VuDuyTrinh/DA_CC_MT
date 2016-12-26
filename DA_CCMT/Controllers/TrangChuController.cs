@@ -32,5 +32,13 @@ namespace DA_CCMT.Controllers
             var hang = (from a in data.HangNHs select a).Take(12); //Lấy 12 sản phẩm
             return PartialView(hang);
         }
+        public ActionResult ChoNam(int? pape)//trang sản phẩm cho nam
+        {
+            var t = from a in data.SanPhams where (a.MaLoai == 2) select a;//truy vấn lấy dữ liệu sản phẩm
+            int SoSP = 9;//số sản phẩm trong một trang là 9
+            int SoTrang = (pape ?? 1);//số trang
+            return View(t.ToPagedList(SoTrang, SoSP));//trả về danh sách sản phẩm và số trang
+
+        }
     }
 }
