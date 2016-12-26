@@ -16,7 +16,8 @@ namespace DA_CCMT
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "TrangChu", action = "Index", id = UrlParameter.Optional } //Truyền Controller và action khi mở trang chủ
+                //Cấu hình trang chủ cho web bằng controller và action trong Folder Controllers
+                defaults: new { controller = "TrangChu", action = "Index", id = UrlParameter.Optional } 
             );
         }
     }
