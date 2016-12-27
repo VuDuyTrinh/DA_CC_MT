@@ -32,6 +32,15 @@ namespace DA_CCMT.Controllers
             var hang = (from a in data.HangNHs select a).Take(12); //Lấy 12 sản phẩm
             return PartialView(hang);
         }
+
+
+        public ActionResult SpHot(int i) // i là số sản phẩm sẽ bỏ qua để lấy các sản phẩm khác nhau trong carousel slide
+        {
+            var sp = (from a in data.SanPhams select a).Skip(i).Take(4); //Lấy 4 sản phẩm để hiển thị trong carousel slide
+            return PartialView(sp); //Đây là PartialView của LayoutUser
+        }
+
+
         public ActionResult ChoNam(int? pape)//trang sản phẩm cho nam
         {
             var t = from a in data.SanPhams where (a.MaLoai == 1) select a;//truy vấn lấy dữ liệu sản phẩm

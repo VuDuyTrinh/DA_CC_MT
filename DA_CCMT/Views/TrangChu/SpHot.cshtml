@@ -1,0 +1,26 @@
+﻿@model IEnumerable<DA_CCMT.Models.SanPham>
+
+
+@{
+//int i = 0;
+}
+
+        @foreach (var item in Model)
+        {
+
+            
+                <li class="span3">
+                    <div class="thumbnail">
+                        <i class="tag"></i>
+                        <a href="@Url.Action("chitiet","TrangChu", new { id = item.MaNH })"><img src="@Url.Content("~/hinhsp/" + @item.hinh)" width="200"></a>
+                        <div class="caption" style="height: 100px;">
+                            <h5 style="height:50px;">@item.TenNH</h5>
+                            <h4><a class="btn" href="@Url.Action("chitiet","TrangChu", new { id = item.MaNH })" style="">VIEW</a> <span class="pull-right">@String.Format("{0:0,0}", @item.Gia).Replace(",", ".") </span></h4>
+                        </div>
+                    </div>
+                </li>
+            
+
+
+        }
+
