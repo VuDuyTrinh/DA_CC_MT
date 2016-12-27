@@ -1,0 +1,103 @@
+﻿@using webfinal.Models
+@{
+    ViewBag.Title = "DatHang";
+    Layout = "~/Views/Shared/layoutchung.cshtml";
+}
+<h3>Thông tin đặt hàng</h3>
+@{
+    KhachHang nh = (KhachHang)Session["TaiKhoan"];
+}
+
+<hr class="soft" />
+<a style="color:red">@ViewBag.Loi</a>
+<form class="form-horizontal" action="@Url.Action("DatHang", "GioHang")" method="post">
+    <table class="table table-bordered">
+
+        <tr><th>Thông tin khách hàng</th></tr>
+        <tr>
+            <td>
+                
+                    <div class="control-group">
+                        <label class="control-label" for="inputUsername">Họ tên: </label>
+                        <div class="controls">
+                            <label class="control-label" for="inputUsername">@nh.TenKH</label>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label" for="inputPassword1">Địa chỉ: </label>
+                        <div class="controls">
+                            <label class="control-label" for="inputUsername">@nh.DiaChi</label>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label" for="inputPassword1">Điện Thoại :</label>
+                        <div class="controls">
+                            <label class="control-label" for="inputUsername">@nh.DienThoai</label>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label" for="inputPassword1">Ngày Đặt :  </label>
+                        <div class="controls">
+                            <label class="control-label" for="inputUsername">@DateTime.Now.ToShortDateString()</label>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label" for="inputPassword1">Ngày Giao</label>
+                        <div class="controls">
+                            <input type="date" id="days" placeholder="Ngày Giao" name="NgayGiao">
+                        </div>
+                    </div>
+                
+            </td>
+        </tr>
+    </table>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Mã nước hoa</th>
+                <th>Hình</th>
+                <th>Tên</th>
+                <th>Số Lượng</th>
+                <th>Giá</th>
+                <th>Thành Tiền</th>
+                <th>Chọn</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.iMANH</td>
+                    <td> <img width="60" src="@Url.Content("~/hinhsp/"+ @item.iMANH +".png")" alt="" /></td>
+                    <td>MASSA AST<br />Color : black, Material : metal</td>
+                    <td>
+                        <div class="input-append"><input class="span1" style="max-width:34px" placeholder="@item.iSoLuong" id="appendedInputButtons" size="16" type="text"><button class="btn" type="button"><i class="icon-minus"></i></button><button class="btn" type="button"><i class="icon-plus"></i></button><button class="btn btn-danger" type="button"><i class="icon-remove icon-white"></i></button>				</div>
+                    </td>
+                    <td>@item.iTenNH</td>
+                    <td>@String.Format("{0:0}", item.iGia) VNĐ</td>
+                    <td>@String.Format("{0:0}", item.iThanhTie) VNĐ</td>
+                    <td><a href="#">Xóa</a>| <a href="@Url.Action("detail","TrangChu", new {id = item.iMANH})">Chi tiết</a></td>
+                </tr>
+            }
+
+            <tr>
+                <td colspan="4" style="text-align:right">Tổng số lượng:	</td>
+                <td colspan="4" style="text-align:right">@ViewBag.Tongsoluong</td>
+            </tr>
+            <tr>
+                <td colspan="4" style="text-align:right">Tổng Tiền:	</td>
+                <td colspan="4" style="text-align:right">@String.Format("{0:0}", ViewBag.Tongtien) VNĐ</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="control-group">
+        <div class="controls">
+            <input class="btn btn-large btn-success" type="submit" value="Xác Nhận Đặt Hàng" />
+        </div>
+        <div class="controls">
+            <br/>
+            <a href="@Url.Action("Onepay", "GioHang")" style="color: red">Thanh Toán Trực Tuyến</a>
+        </div>
+    </div>
+</form>
