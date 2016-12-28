@@ -49,5 +49,12 @@ namespace DA_CCMT.Controllers
             return View(t.ToPagedList(SoTrang, SoSP));//trả về danh sách sản phẩm và số trang
 
         }
+        public ActionResult ChoNu(int? pape)//trang sản phẩm cho nữ
+        {
+            var t = from a in data.SanPhams where (a.MaLoai == 2) select a;//truy vấn
+            int SoSP = 9;//số sản phẩm trong một trang
+            int SoTrang = (pape ?? 1);
+            return View(t.ToPagedList(SoTrang, SoSP));//trả về danh sách sản phẩm và số trang
+        }
     }
 }
