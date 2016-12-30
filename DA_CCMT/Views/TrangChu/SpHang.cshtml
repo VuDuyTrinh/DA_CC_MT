@@ -14,7 +14,7 @@
             <li class="span3">
                 <div class="thumbnail">
                     <i class="tag"></i>
-                    <a href="@Url.Action("chitiet","TrangChu", new { id = item.MaNH })"><img src="@Url.Content("~/hinhsp/" + @item.hinh)" width="50"></a>
+                    <a href="@Url.Action("chitiet","TrangChu", new { id = item.MaNH })"><img src="@Url.Content("~/hinhsp/" + @item.hinh)" width="300"></a>
                     <div class="caption" style="height: 130px;">
                         <h5 style="height: 60px">@item.TenNH</h5>
                         <h4><a class="btn" href="@Url.Action("ThemGioHang", "GioHang", new { @iMANH=@item.MaNH , @strURL=Request.Url.ToString(), @sl=1})">Thêm Vào Giỏ</a> <span class="pull-right">@String.Format("{0:0,0 VNĐ}", @item.Gia).Replace(",", ".")</span></h4>
