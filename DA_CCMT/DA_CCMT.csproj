@@ -501,6 +501,7 @@
     <Content Include="themes\less\wells.less" />
     <Content Include="Views\TrangChu\ChoNam.cshtml" />
     <Content Include="Views\TrangChu\SpHot.cshtml" />
+    <Content Include="Views\TrangChu\SpHang.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="admin\" />

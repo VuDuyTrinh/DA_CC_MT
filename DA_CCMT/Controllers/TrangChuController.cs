@@ -56,5 +56,12 @@ namespace DA_CCMT.Controllers
             int SoTrang = (pape ?? 1);
             return View(t.ToPagedList(SoTrang, SoSP));//trả về danh sách sản phẩm và số trang
         }
+        public ActionResult SpHang(int? page, int id)
+        {
+            int SoSP = 9;
+            int SoTrang = (page ?? 1);
+            var sp = from a in data.SanPhams where (a.MaHang == id) select a;
+            return View(sp.ToPagedList(SoTrang, SoSP));
+        }
     }
 }

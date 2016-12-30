@@ -1,22 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QLWEBNUOCHOA" Class="QLNHDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="WebSettings" ConnectionString="Data Source=NGUYENHUYNH;Initial Catalog=QLWEBNUOCHOA;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="QLWEBNUOCHOAConnectionString" Provider="System.Data.SqlClient" />
+  <Connection Mode="WebSettings" ConnectionString="Data Source=DESKTOP-FOHKS9J;Initial Catalog=QLWEBNUOCHOA;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="QLWEBNUOCHOAConnectionString1" Provider="System.Data.SqlClient" />
   <Table Name="dbo.Admin" Member="Admins">
     <Type Name="Admin">
       <Column Name="TenTK" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="MatKhau" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
       <Column Name="HoTen" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Association Name="Admin_TraLoi" Member="TraLois" ThisKey="TenTK" OtherKey="TenTK" Type="TraLoi" />
       <Association Name="Admin_CTCN" Member="CTCNs" ThisKey="TenTK" OtherKey="TenTK" Type="CTCN" />
-    </Type>
-  </Table>
-  <Table Name="dbo.TraLoi" Member="TraLois">
-    <Type Name="TraLoi">
-      <Column Name="MaCauTL" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="TraLoi" Member="TraLoi1" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
-      <Column Name="TenTK" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Column Name="MaCauHoi" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Association Name="Admin_TraLoi" Member="Admin" ThisKey="TenTK" OtherKey="TenTK" Type="Admin" IsForeignKey="true" />
-      <Association Name="CauHoi_TraLoi" Member="CauHoi" ThisKey="MaCauHoi" OtherKey="MaCauHoi" Type="CauHoi" IsForeignKey="true" />
+      <Association Name="Admin_TraLoi" Member="TraLois" ThisKey="TenTK" OtherKey="TenTK" Type="TraLoi" />
     </Type>
   </Table>
   <Table Name="dbo.CauHoi" Member="CauHois">
@@ -103,27 +93,7 @@
     <Type Name="LoaiNH">
       <Column Name="MaLoai" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="TenLoai" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Association Name="LoaiNH_NH" Member="NHs" ThisKey="MaLoai" OtherKey="MaLoai" Type="NH" />
       <Association Name="LoaiNH_SanPham" Member="SanPhams" ThisKey="MaLoai" OtherKey="MaLoai" Type="SanPham" />
-      <Association Name="LoaiNH_Table_1" Member="Table_1s" ThisKey="MaLoai" OtherKey="MaLoai" Type="Table_1" />
-    </Type>
-  </Table>
-  <Table Name="dbo.NH" Member="NHs">
-    <Type Name="NH">
-      <Column Name="MaNH" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="TenNH" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
-      <Column Name="Gia" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="NongDo" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
-      <Column Name="NhomHuong" Type="System.String" DbType="NVarChar(300) NOT NULL" CanBeNull="false" />
-      <Column Name="PhongCach" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
-      <Column Name="NguoiSL" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
-      <Column Name="NamSX" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
-      <Column Name="XuatXu" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
-      <Column Name="hinh" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
-      <Column Name="MaLoai" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="MaHang" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="SoLuong" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Association Name="LoaiNH_NH" Member="LoaiNH" ThisKey="MaLoai" OtherKey="MaLoai" Type="LoaiNH" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.PhieuNhap" Member="PhieuNhaps">
@@ -155,23 +125,14 @@
       <Association Name="LoaiNH_SanPham" Member="LoaiNH" ThisKey="MaLoai" OtherKey="MaLoai" Type="LoaiNH" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="dbo.Table_1" Member="Table_1s">
-    <Type Name="Table_1">
-      <Column Name="MaNH" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="TenNH" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
-      <Column Name="Gia" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="NongDo" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
-      <Column Name="NhomHuong" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
-      <Column Name="PhongCach" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
-      <Column Name="NguoiSL" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
-      <Column Name="NamSX" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="XuatXu" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
-      <Column Name="hinh" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
-      <Column Name="MaLoai" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="MaHang" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="SoLuong" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="MoTa" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
-      <Association Name="LoaiNH_Table_1" Member="LoaiNH" ThisKey="MaLoai" OtherKey="MaLoai" Type="LoaiNH" IsForeignKey="true" />
+  <Table Name="dbo.TraLoi" Member="TraLois">
+    <Type Name="TraLoi">
+      <Column Name="MaCauTL" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TraLoi" Member="TraLoi1" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="TenTK" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MaCauHoi" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Admin_TraLoi" Member="Admin" ThisKey="TenTK" OtherKey="TenTK" Type="Admin" IsForeignKey="true" />
+      <Association Name="CauHoi_TraLoi" Member="CauHoi" ThisKey="MaCauHoi" OtherKey="MaCauHoi" Type="CauHoi" IsForeignKey="true" />
     </Type>
   </Table>
 </Database>
