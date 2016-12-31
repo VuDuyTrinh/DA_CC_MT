@@ -207,6 +207,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\QLDDHController.cs" />
     <Compile Include="Controllers\TrangChuController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -502,6 +503,7 @@
     <Content Include="Views\TrangChu\ChoNam.cshtml" />
     <Content Include="Views\TrangChu\SpHot.cshtml" />
     <Content Include="Views\TrangChu\SpHang.cshtml" />
+    <Content Include="Views\QLDDH\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="admin\" />
