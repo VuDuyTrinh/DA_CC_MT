@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewBag.Title = "taikhoan";
+    Layout = "~/Views/Shared/LayoutAdmin.cshtml";
+}
+<script src="~/canvasjs-1.9.2/canvasjs.min.js"></script>
+<script src="~/canvasjs-1.9.2/jquery.canvasjs.min.js"></script>
+<h2>Thống kê số lượng tài khoản admin</h2>
+<script type="text/javascript">
+    window.onload = function () {
+        var chart = new CanvasJS.Chart("chartContainer",
+        {
+            animationEnabled: true,
+            theme: "theme2",
+            //exportEnabled: true,
+            title: {
+                text: "Thống kê số lượng tài khoan"
+            },
+            data: [
+            {
+                type: "column", //change type to bar, line, area, pie, etc
+                dataPoints: [
+                    { x: 50, y: @Model }
+                    
+                ]
+            }
+            ]
+        });
+
+        chart.render();
+    }
+</script>
+
+    <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+

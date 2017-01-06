@@ -1,0 +1,129 @@
+﻿@model webfinal.Models.SanPham
+
+@{
+    ViewBag.Title = "Xoa";
+    Layout = "~/Views/Shared/LayoutAdmin.cshtml";
+}
+
+<h2>Xoa</h2>
+
+<h3>Bạn Chắc Chắn muốn xóa sản phẩm này.</h3>
+<div>
+    <h4>SanPham</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TenNH)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenNH)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Gia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Gia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NongDo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NongDo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NhomHuong)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NhomHuong)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PhongCach)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PhongCach)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NguoiSL)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NguoiSL)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NamSX)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NamSX)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.XuatXu)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.XuatXu)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.hinh)
+        </dt>
+
+        <dd>
+            <img src="@Url.Content("~/hinhsp/" + @Model.hinh)" width="200" />
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MaLoai)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaLoai)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MaHang)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaHang)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SoLuong)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SoLuong)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MoTa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MoTa)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "DsNuocHoa")
+        </div>
+    }
+</div>

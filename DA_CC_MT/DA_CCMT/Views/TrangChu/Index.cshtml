@@ -1,0 +1,43 @@
+﻿@using DA_CCMT.Models
+@using PagedList.Mvc;
+@model PagedList.PagedList<SanPham>
+@{
+    <title>Nước Hoa Nam Nữ || Chất Lượng</title>  <!-- Tiêu đề trang chủ -->
+    Layout = "~/Views/Shared/LayOutUser.cshtml";<!-- Layout chung -->
+}
+<br/>
+<h3 style="margin-left: 25px;">Danh sách sản phẩm</h3>
+<br />
+<ul class="thumbnails">
+    <!-- Danh sách tất cả sản phẩm lấy từ model được return từ TrangChuController hàm Index -->
+    @foreach (var item in Model)
+    {
+        <li class="span3">
+            <div class="thumbnail"> <!-- Khung chứa sản phẩm-->
+                <i class="tag"></i>
+                <a href="@Url.Action("chitiet","TrangChu", new { id = item.MaNH })"><img src="@Url.Content("~/hinhsp/" + @item.hinh)" width="300"></a>
+                <div class="caption" style="height: 130px;">
+                    <h5 style="height: 60px">@item.TenNH</h5>
+                    <!-- Button thêm giỏ hàng-->
+                    <h4><a class="btn" href="@Url.Action("ThemGioHang", "GioHang", new { @iMANH=@item.MaNH , @strURL=Request.Url.ToString(), @sl=1})">Thêm Vào Giỏ</a> <span class="pull-right">@String.Format("{0:0,0 VNĐ}", @item.Gia).Replace(",", ".")</span></h4>
+                </div>
+            </div> <!--Kết thúc khung chứa sản phẩm-->
+        </li>
+    }
+</ul>
+<div style="text-align:center">
+    <!-- Kết thúc danh sách sản phẩm -->
+   @*Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber)/@Model.PageCount*@    <!-- Số trang hiện tại -->
+    <div class="menutrang">
+        @Html.PagedListPager(Model, page => Url.Action("Index", new { page = page }))   <!-- Button để đi đến trang tiếp theo -->
+    </div>
+</div>
+ 
+<style>
+    .menutrang li {
+        display: inline;
+    }
+</style>
+
+
+       

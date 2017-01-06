@@ -1,0 +1,347 @@
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\ApplicationInsights.config
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\roslyn\csc.exe
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\roslyn\vbc.exe
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\roslyn\VBCSCompiler.exe
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\DA_CCMT.dll.config
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\DA_CCMT.dll
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\DA_CCMT.pdb
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\Antlr3.Runtime.dll
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\EntityFramework.dll
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\EntityFramework.SqlServer.dll
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\Microsoft.AI.Web.dll
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\Microsoft.ApplicationInsights.dll
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\Microsoft.Owin.dll
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\Microsoft.Owin.Security.dll
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\Newtonsoft.Json.dll
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\Owin.dll
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\PagedList.dll
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\PagedList.Mvc.dll
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\System.Web.Helpers.dll
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\System.Web.Mvc.dll
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\System.Web.Optimization.dll
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\System.Web.Razor.dll
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\System.Web.WebPages.Deployment.dll
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\System.Web.WebPages.dll
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\System.Web.WebPages.Razor.dll
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\WebGrease.dll
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\Microsoft.AI.Web.xml
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\Microsoft.ApplicationInsights.xml
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\PagedList.xml
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\PagedList.Mvc.xml
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\System.Web.Helpers.xml
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\System.Web.Mvc.xml
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\System.Web.Optimization.xml
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\System.Web.Razor.xml
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\System.Web.WebPages.xml
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\System.Web.WebPages.Deployment.xml
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\System.Web.WebPages.Razor.xml
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\Antlr3.Runtime.pdb
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\Newtonsoft.Json.xml
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\EntityFramework.xml
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\EntityFramework.SqlServer.xml
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\Microsoft.Owin.xml
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\Microsoft.Owin.Security.xml
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\obj\Debug\DA_CCMT.csprojResolveAssemblyReference.cache
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\obj\Debug\DA_CCMT.dll
+C:\Users\CamNhung\Desktop\GIT\DA_CC_MT\DA_CCMT\obj\Debug\DA_CCMT.pdb
+E:\Git\DA_CC_MT\DA_CCMT\bin\ApplicationInsights.config
+E:\Git\DA_CC_MT\DA_CCMT\bin\roslyn\csc.exe
+E:\Git\DA_CC_MT\DA_CCMT\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Git\DA_CC_MT\DA_CCMT\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Git\DA_CC_MT\DA_CCMT\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Git\DA_CC_MT\DA_CCMT\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Git\DA_CC_MT\DA_CCMT\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Git\DA_CC_MT\DA_CCMT\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Git\DA_CC_MT\DA_CCMT\bin\roslyn\System.Collections.Immutable.dll
+E:\Git\DA_CC_MT\DA_CCMT\bin\roslyn\System.Reflection.Metadata.dll
+E:\Git\DA_CC_MT\DA_CCMT\bin\roslyn\vbc.exe
+E:\Git\DA_CC_MT\DA_CCMT\bin\roslyn\VBCSCompiler.exe
+E:\Git\DA_CC_MT\DA_CCMT\bin\roslyn\VBCSCompiler.exe.config
+E:\Git\DA_CC_MT\DA_CCMT\bin\DA_CCMT.dll.config
+E:\Git\DA_CC_MT\DA_CCMT\bin\DA_CCMT.dll
+E:\Git\DA_CC_MT\DA_CCMT\bin\DA_CCMT.pdb
+E:\Git\DA_CC_MT\DA_CCMT\bin\Antlr3.Runtime.dll
+E:\Git\DA_CC_MT\DA_CCMT\bin\EntityFramework.dll
+E:\Git\DA_CC_MT\DA_CCMT\bin\EntityFramework.SqlServer.dll
+E:\Git\DA_CC_MT\DA_CCMT\bin\Microsoft.AI.Agent.Intercept.dll
+E:\Git\DA_CC_MT\DA_CCMT\bin\Microsoft.AI.DependencyCollector.dll
+E:\Git\DA_CC_MT\DA_CCMT\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\Git\DA_CC_MT\DA_CCMT\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\Git\DA_CC_MT\DA_CCMT\bin\Microsoft.AI.Web.dll
+E:\Git\DA_CC_MT\DA_CCMT\bin\Microsoft.AI.WindowsServer.dll
+E:\Git\DA_CC_MT\DA_CCMT\bin\Microsoft.ApplicationInsights.dll
+E:\Git\DA_CC_MT\DA_CCMT\bin\Microsoft.AspNet.Identity.Core.dll
+E:\Git\DA_CC_MT\DA_CCMT\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Git\DA_CC_MT\DA_CCMT\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\Git\DA_CC_MT\DA_CCMT\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Git\DA_CC_MT\DA_CCMT\bin\Microsoft.Owin.dll
+E:\Git\DA_CC_MT\DA_CCMT\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Git\DA_CC_MT\DA_CCMT\bin\Microsoft.Owin.Security.Cookies.dll
+E:\Git\DA_CC_MT\DA_CCMT\bin\Microsoft.Owin.Security.dll
+E:\Git\DA_CC_MT\DA_CCMT\bin\Microsoft.Owin.Security.Facebook.dll
+E:\Git\DA_CC_MT\DA_CCMT\bin\Microsoft.Owin.Security.Google.dll
+E:\Git\DA_CC_MT\DA_CCMT\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\Git\DA_CC_MT\DA_CCMT\bin\Microsoft.Owin.Security.OAuth.dll
+E:\Git\DA_CC_MT\DA_CCMT\bin\Microsoft.Owin.Security.Twitter.dll
+E:\Git\DA_CC_MT\DA_CCMT\bin\Microsoft.Web.Infrastructure.dll
+E:\Git\DA_CC_MT\DA_CCMT\bin\Newtonsoft.Json.dll
+E:\Git\DA_CC_MT\DA_CCMT\bin\Owin.dll
+E:\Git\DA_CC_MT\DA_CCMT\bin\PagedList.dll
+E:\Git\DA_CC_MT\DA_CCMT\bin\PagedList.Mvc.dll
+E:\Git\DA_CC_MT\DA_CCMT\bin\System.Web.Helpers.dll
+E:\Git\DA_CC_MT\DA_CCMT\bin\System.Web.Mvc.dll
+E:\Git\DA_CC_MT\DA_CCMT\bin\System.Web.Optimization.dll
+E:\Git\DA_CC_MT\DA_CCMT\bin\System.Web.Razor.dll
+E:\Git\DA_CC_MT\DA_CCMT\bin\System.Web.WebPages.Deployment.dll
+E:\Git\DA_CC_MT\DA_CCMT\bin\System.Web.WebPages.dll
+E:\Git\DA_CC_MT\DA_CCMT\bin\System.Web.WebPages.Razor.dll
+E:\Git\DA_CC_MT\DA_CCMT\bin\WebGrease.dll
+E:\Git\DA_CC_MT\DA_CCMT\bin\Microsoft.AI.DependencyCollector.xml
+E:\Git\DA_CC_MT\DA_CCMT\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\Git\DA_CC_MT\DA_CCMT\bin\Microsoft.AI.Web.xml
+E:\Git\DA_CC_MT\DA_CCMT\bin\Microsoft.AI.WindowsServer.xml
+E:\Git\DA_CC_MT\DA_CCMT\bin\Microsoft.ApplicationInsights.xml
+E:\Git\DA_CC_MT\DA_CCMT\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Git\DA_CC_MT\DA_CCMT\bin\PagedList.xml
+E:\Git\DA_CC_MT\DA_CCMT\bin\PagedList.Mvc.xml
+E:\Git\DA_CC_MT\DA_CCMT\bin\System.Web.Helpers.xml
+E:\Git\DA_CC_MT\DA_CCMT\bin\System.Web.Mvc.xml
+E:\Git\DA_CC_MT\DA_CCMT\bin\System.Web.Optimization.xml
+E:\Git\DA_CC_MT\DA_CCMT\bin\System.Web.Razor.xml
+E:\Git\DA_CC_MT\DA_CCMT\bin\System.Web.WebPages.xml
+E:\Git\DA_CC_MT\DA_CCMT\bin\System.Web.WebPages.Deployment.xml
+E:\Git\DA_CC_MT\DA_CCMT\bin\System.Web.WebPages.Razor.xml
+E:\Git\DA_CC_MT\DA_CCMT\bin\Antlr3.Runtime.pdb
+E:\Git\DA_CC_MT\DA_CCMT\bin\Newtonsoft.Json.xml
+E:\Git\DA_CC_MT\DA_CCMT\bin\EntityFramework.xml
+E:\Git\DA_CC_MT\DA_CCMT\bin\EntityFramework.SqlServer.xml
+E:\Git\DA_CC_MT\DA_CCMT\bin\Microsoft.AspNet.Identity.Core.xml
+E:\Git\DA_CC_MT\DA_CCMT\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\Git\DA_CC_MT\DA_CCMT\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Git\DA_CC_MT\DA_CCMT\bin\Microsoft.Owin.xml
+E:\Git\DA_CC_MT\DA_CCMT\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Git\DA_CC_MT\DA_CCMT\bin\Microsoft.Owin.Security.xml
+E:\Git\DA_CC_MT\DA_CCMT\bin\Microsoft.Owin.Security.Facebook.xml
+E:\Git\DA_CC_MT\DA_CCMT\bin\Microsoft.Owin.Security.Cookies.xml
+E:\Git\DA_CC_MT\DA_CCMT\bin\Microsoft.Owin.Security.OAuth.xml
+E:\Git\DA_CC_MT\DA_CCMT\bin\Microsoft.Owin.Security.Google.xml
+E:\Git\DA_CC_MT\DA_CCMT\bin\Microsoft.Owin.Security.Twitter.xml
+E:\Git\DA_CC_MT\DA_CCMT\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\Git\DA_CC_MT\DA_CCMT\obj\Debug\DA_CCMT.csprojResolveAssemblyReference.cache
+E:\Git\DA_CC_MT\DA_CCMT\obj\Debug\DA_CCMT.dll
+E:\Git\DA_CC_MT\DA_CCMT\obj\Debug\DA_CCMT.pdb
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\ApplicationInsights.config
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\roslyn\csc.exe
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\roslyn\vbc.exe
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\roslyn\VBCSCompiler.exe
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\DA_CCMT.dll.config
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\DA_CCMT.dll
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\DA_CCMT.pdb
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\Antlr3.Runtime.dll
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\EntityFramework.dll
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\EntityFramework.SqlServer.dll
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\Microsoft.AI.Web.dll
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\Microsoft.ApplicationInsights.dll
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\Microsoft.Owin.dll
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\Microsoft.Owin.Security.dll
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\Newtonsoft.Json.dll
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\Owin.dll
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\PagedList.dll
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\PagedList.Mvc.dll
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\System.Web.Helpers.dll
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\System.Web.Mvc.dll
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\System.Web.Optimization.dll
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\System.Web.Razor.dll
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\System.Web.WebPages.Deployment.dll
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\System.Web.WebPages.dll
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\System.Web.WebPages.Razor.dll
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\WebGrease.dll
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\Microsoft.AI.Web.xml
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\Microsoft.ApplicationInsights.xml
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\PagedList.xml
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\PagedList.Mvc.xml
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\System.Web.Helpers.xml
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\System.Web.Mvc.xml
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\System.Web.Optimization.xml
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\System.Web.Razor.xml
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\System.Web.WebPages.xml
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\System.Web.WebPages.Deployment.xml
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\System.Web.WebPages.Razor.xml
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\Antlr3.Runtime.pdb
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\Newtonsoft.Json.xml
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\EntityFramework.xml
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\EntityFramework.SqlServer.xml
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\Microsoft.Owin.xml
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\Microsoft.Owin.Security.xml
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\obj\Debug\DA_CCMT.csprojResolveAssemblyReference.cache
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\obj\Debug\DA_CCMT.dll
+C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\obj\Debug\DA_CCMT.pdb
+D:\DA_CC_MT\DA_CCMT\obj\Debug\DA_CCMT.csprojResolveAssemblyReference.cache
+D:\DA_CC_MT\DA_CCMT\obj\Debug\DA_CCMT.dll
+D:\DA_CC_MT\DA_CCMT\obj\Debug\DA_CCMT.pdb
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\obj\Debug\DA_CCMT.csprojResolveAssemblyReference.cache
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\obj\Debug\DA_CCMT.dll
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\obj\Debug\DA_CCMT.pdb
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\ApplicationInsights.config
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\roslyn\csc.exe
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\roslyn\System.Collections.Immutable.dll
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\roslyn\System.Reflection.Metadata.dll
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\roslyn\vbc.exe
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\roslyn\VBCSCompiler.exe
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\roslyn\VBCSCompiler.exe.config
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\DA_CCMT.dll.config
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\DA_CCMT.dll
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\DA_CCMT.pdb
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\Antlr3.Runtime.dll
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\EntityFramework.dll
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\EntityFramework.SqlServer.dll
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\Microsoft.AI.Agent.Intercept.dll
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\Microsoft.AI.DependencyCollector.dll
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\Microsoft.AI.Web.dll
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\Microsoft.AI.WindowsServer.dll
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\Microsoft.ApplicationInsights.dll
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\Microsoft.AspNet.Identity.Core.dll
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\Microsoft.Owin.dll
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\Microsoft.Owin.Security.Cookies.dll
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\Microsoft.Owin.Security.dll
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\Microsoft.Owin.Security.Facebook.dll
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\Microsoft.Owin.Security.Google.dll
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\Microsoft.Owin.Security.OAuth.dll
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\Microsoft.Owin.Security.Twitter.dll
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\Microsoft.Web.Infrastructure.dll
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\Newtonsoft.Json.dll
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\Owin.dll
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\PagedList.dll
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\PagedList.Mvc.dll
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\System.Web.Helpers.dll
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\System.Web.Mvc.dll
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\System.Web.Optimization.dll
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\System.Web.Razor.dll
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\System.Web.WebPages.Deployment.dll
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\System.Web.WebPages.dll
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\System.Web.WebPages.Razor.dll
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\WebGrease.dll
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\Microsoft.AI.DependencyCollector.xml
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\Microsoft.AI.Web.xml
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\Microsoft.AI.WindowsServer.xml
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\Microsoft.ApplicationInsights.xml
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\PagedList.xml
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\PagedList.Mvc.xml
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\System.Web.Helpers.xml
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\System.Web.Mvc.xml
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\System.Web.Optimization.xml
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\System.Web.Razor.xml
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\System.Web.WebPages.xml
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\System.Web.WebPages.Deployment.xml
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\System.Web.WebPages.Razor.xml
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\Antlr3.Runtime.pdb
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\Newtonsoft.Json.xml
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\EntityFramework.xml
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\EntityFramework.SqlServer.xml
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\Microsoft.AspNet.Identity.Core.xml
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\Microsoft.Owin.xml
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\Microsoft.Owin.Security.xml
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\Microsoft.Owin.Security.Facebook.xml
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\Microsoft.Owin.Security.Cookies.xml
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\Microsoft.Owin.Security.OAuth.xml
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\Microsoft.Owin.Security.Google.xml
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\Microsoft.Owin.Security.Twitter.xml
+E:\CongCuPhatTrien\New folder\DA_CC_MT\DA_CCMT\bin\Microsoft.Owin.Security.MicrosoftAccount.xml

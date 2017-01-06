@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "xoa";
+    Layout = "~/Views/Shared/LayoutAdmin.cshtml";
+}
+
+<h3>Trả lời tin nhắn của khách hàng</h3>
+<a style="color:red">@ViewBag.ThongBao</a>
+@using (Html.BeginForm("xoa", "TuVan"))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+    <form>
+        <div class="group">
+            <hr class="soft" style="margin-bottom : 5px;" />
+            <div class="col-md-2"> </div>
+            <div class="col-md-2"><p>Câu hỏi</p></div>
+            <div class="col-md-7" style="height:100px;"><p>@Model.NoiDung</p></div>
+        </div>
+        <br />
+        <div class="container">
+
+            <div class="col-md-2"> </div>
+            <div class="col-md-2"> </div>
+            <div class="col-md-4"><input class="btn btn-large btn-success" type="submit" value="Xóa" style="margin-top:10px; float: right; width: 150px; " /></div>
+
+        </div>
+    </form>
+}
+
+

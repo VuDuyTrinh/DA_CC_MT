@@ -1,0 +1,36 @@
+﻿@model IEnumerable<DA_CCMT.Models.HangNH>
+<div id="sidebar" class="span3">
+    <h4 style="margin-left: 5px;">Danh sách Hãng Nước Hoa</h4>
+    <ul id="sideManu" class="nav nav-tabs nav-stacked">
+        @foreach (var item in Model)
+        {      
+            <li><a href="@Url.Action("SpHang", "TrangChu", new { id=item.MaHang})">@item.TenHang</a></li>
+        }
+       
+    </ul>
+    <div class="thumbnail">
+        <div class="fb-page" data-href="https://www.facebook.com/Nuochoatn-344161335934488/?skip_nax_wizard=true" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/Nuochoatn-344161335934488/?skip_nax_wizard=true" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Nuochoatn-344161335934488/?skip_nax_wizard=true">Nuochoat&amp;n</a></blockquote></div>
+    </div><br />
+    <div class="thumbnail">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.1192242021307!2d106.71261428134378!3d10.802179714822152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528a459cb43ab%3A0x6c3d29d370b52a7e!2zSFVURUNIIC0gxJDhuqFpIGjhu41jIEPDtG5nIG5naOG7hyBUUC5IQ00!5e0!3m2!1svi!2s!4v1477591821093" width="250" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+    <div class="thumbnail">
+        <a href="http://www.accuweather.com/en/vn/ho-chi-minh-city/353981/weather-forecast/353981" class="aw-widget-legal">
+            <!--
+        By accessing and/or using this code snippet, you agree to AccuWeather’s terms and conditions (in English) which can be found at http://www.accuweather.com/en/free-weather-widgets/terms and AccuWeather’s Privacy Statement (in English) which can be found at http://www.accuweather.com/en/privacy.
+        -->
+        </a><div id="awcc1477592585155" class="aw-widget-current" data-locationkey="353981" data-unit="c" data-language="vi" data-useip="false" data-uid="awcc1477592585155"></div>
+        <script type="text/javascript" src="http://oap.accuweather.com/launch.js"></script>
+    </div>
+</div>
+<div id="fb-root"></div>
+<script>
+    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.8";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+

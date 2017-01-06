@@ -1,0 +1,141 @@
+﻿@using webfinal.Models
+@{
+    ViewBag.Title = "Giohang";
+    Layout = "~/Views/Shared/layoutchung.cshtml";
+}
+<ul class="breadcrumb">
+    <li><a href="index.html">Home</a> <span class="divider">/</span></li>
+    <li class="active"> SHOPPING CART</li>
+</ul>
+<a style="color:red">@ViewBag.Loi</a>
+<h3>  Giỏ Hàng<a href="@Url.Action("Index","TrangChu")" class="btn btn-large pull-right"><i class="icon-arrow-left"></i> Tiếp tục mua hàng </a></h3>
+<hr class="soft" />
+@{
+    KhachHang nh = (KhachHang)Session["TaiKhoan"];
+}
+<a style="color:red">@ViewData["loi"]</a>
+@if (Session["TaiKhoan"]==null)
+    {
+<table class="table table-bordered">
+     
+    <tr><th>Đăng nhập ngay</th></tr>
+    <tr>
+        <td>
+            <form class="form-horizontal" action="@Url.Action("DangNhap", "TrangChu" ,new { @strURL = Request.Url.ToString() })" method="post">
+                <div class="control-group">
+                    <label class="control-label" for="inputUsername">Tên tài khoản</label>
+                    <div class="controls">
+                        <input type="text" id="inputUsername" placeholder="Username" name="inputEmail">
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="inputPassword1">Mật khẩu</label>
+                    <div class="controls">
+                        <input type="password" id="inputPassword1" placeholder="Password" name="inputPassword">
+                    </div>
+                </div>
+                <div class="control-group">
+                    <div class="controls">
+                        <button type="submit" class="btn">Đăng nhập</button> OR <a href="@Url.Action("DangKy","TrangChu")" class="btn">Đăng ký</a>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <div class="controls">
+                        <a href="forgetpass.html" style="text-decoration:underline">Quên mật khẩu?</a>
+                    </div>
+                </div>
+            </form>
+        </td>
+    </tr>
+</table>
+}
+else
+{
+   
+    <table class="table table-bordered">
+     
+    <tr><th>Thông tin khách hàng</th></tr>
+    <tr>
+        <td>
+            <form class="form-horizontal">
+                <div class="control-group">
+                    <label class="control-label" for="inputUsername">Họ tên: </label>
+                    <div class="controls">
+                        <label class="control-label" for="inputUsername">@nh.TenKH</label>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="inputPassword1">Địa chỉ: </label>
+                    <div class="controls">
+                        <label class="control-label" for="inputUsername">@nh.DiaChi</label>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="inputPassword1">Điện Thoại :</label>
+                    <div class="controls">
+                        <label class="control-label" for="inputUsername">@nh.DienThoai</label>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="inputPassword1">Ngày sinh :</label>
+                    <div class="controls">
+                        <label class="control-label" for="inputUsername">@nh.NgaySinh</label>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="inputPassword1">Email :</label>
+                    <div class="controls">
+                        <label class="control-label" for="inputUsername">@nh.Email</label>
+                    </div>
+                </div>
+            </form>
+        </td>
+    </tr>
+</table>
+}
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Mã nước hoa</th>
+            <th>Hình</th>
+            <th>Tên</th>
+            <th>Số Lượng</th>
+            <th>Giá</th>
+            <th>Thành Tiền</th>
+            <th>Chọn</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var item in Model)
+        { 
+        <tr>
+            <td>@item.iMANH</td>
+            <td> <img width="60" src="@Url.Content("~/hinhsp/"+ @item.iMANH +".png")" alt="" /></td>
+            <td>MASSA AST<br />Color : black, Material : metal</td>
+                <td>
+                    <form action="@Url.Action("CapNhap", "GioHang", new { id = @item.iMANH })" method="post">
+                        <input type="number" name="soluong" value="@item.iSoLuong" style="width:50px;">
+                        <br />
+                        <input type="submit" value="Cập Nhật" />
+                    </form>  
+                </td>
+                <td>@item.iTenNH</td>
+                <td>@String.Format("{0:0}", item.iGia) VNĐ</td>
+                <td>@String.Format("{0:0}", item.iThanhTie) VNĐ</td>
+                <td><a href="#">Xóa</a>| <a href="@Url.Action("detail","TrangChu", new {id = item.iMANH})">Chi tiết</a></td>
+</tr>
+        }
+
+        <tr>
+            <td colspan="4" style="text-align:right">Tổng số lượng:	</td>
+            <td colspan="4" style="text-align:right">@ViewBag.Tongsoluong</td>
+        </tr>
+        <tr>
+            <td colspan="4" style="text-align:right">Tổng Tiền:	</td>
+            <td colspan="4" style="text-align:right">@String.Format("{0:0}", ViewBag.Tongtien) VNĐ</td>
+        </tr>
+    </tbody>
+</table>
+<a href="@Url.Action("Index","TrangChu")" class="btn btn-large"><i class="icon-arrow-left"></i> Tiếp Tục mua Hàng </a>
+<a href="@Url.Action("DatHang", "GioHang")" class="btn btn-large pull-right">Đặt hàng <i class="icon-arrow-right"></i></a>
