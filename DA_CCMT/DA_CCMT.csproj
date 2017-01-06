@@ -518,6 +518,7 @@
     <Content Include="Views\TrangChu\SpHot.cshtml" />
     <Content Include="Views\TrangChu\SpHang.cshtml" />
     <Content Include="Views\QLDDH\Index.cshtml" />
+    <Content Include="Views\QLDDH\DsCheck.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="admin\" />
