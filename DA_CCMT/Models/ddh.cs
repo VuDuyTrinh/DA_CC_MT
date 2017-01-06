@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using webfinal.Models;
+using DA_CCMT.Models;
 
-namespace webfinal.Models
+namespace DA_CCMT.Models
 {
     public class ddh
     {

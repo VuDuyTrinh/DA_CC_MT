@@ -39,7 +39,6 @@ namespace DA_CCMT.Controllers
                 _signInManager = value; 
             }
         }
-
         public ApplicationUserManager UserManager
         {
             get

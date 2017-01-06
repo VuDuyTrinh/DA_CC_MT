@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using webfinal.Models;
+using DA_CCMT.Models;
 
-namespace webfinal.Controllers
+namespace DA_CCMT.Controllers
 {
     public class HangController : Controller
     {
