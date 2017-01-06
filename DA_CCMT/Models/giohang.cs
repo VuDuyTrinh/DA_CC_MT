@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace webfinal.Models
+namespace DA_CCMT.Models
 {
     public class giohang
     {

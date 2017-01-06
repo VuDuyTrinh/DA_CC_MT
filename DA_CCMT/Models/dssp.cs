@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-
 namespace DA_CCMT.Models
 {
     //dùng để lấy thông tin các sản đã đặt của đơn đặt hàng

@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Security.Claims;
 using System.Threading.Tasks;
-using DA_CCMT;
 using Microsoft.AspNet.Identity.EntityFramework;
 
 namespace DA_CCMT.Models
@@ -17,6 +16,8 @@ namespace DA_CCMT.Models
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
+        internal static readonly Func<object> Create;
+
         public ApplicationDbContext()
             : base("DefaultConnection")
         {
