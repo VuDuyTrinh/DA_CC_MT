@@ -1,0 +1,192 @@
+﻿
+@{
+    ViewBag.Title = "ChiTiet";
+    Layout = "~/Views/Shared/LayoutAdmin.cshtml";
+}
+
+<h3>Thông tin chi tiết</h3>
+<br />
+<div class="container" style="width: 100%; margin-left: 20px;">
+    <div class="col-md-4">
+        <img src="@Url.Content("~/hinhsp/" + @Model.hinh)" width="300">
+    </div>
+    <div class="col-lg-6">
+        <h3>Tên nước hoa: @Model.TenNH</h3>
+        <br />
+        <h4>Mô tả: @Model.MoTa</h4>
+    </div>
+</div>
+<div class="container" style="width: 100%; margin-left: 40px; margin-top:40px;">
+    <div class="table">
+        <table class="listing" cellpadding="0" cellspacing="0">
+            <tr>
+                <td></td>
+                <td>Thông tin</td>
+            </tr>
+            <tr style="text-align:center; font-weight:bold">
+                <th>Tên nước hoa</th>
+                <th>@Model.TenNH</th>
+            </tr>
+            <tr style="text-align:center; font-weight:bold">
+                <th>Giá</th>
+                <th>@Model.Gia</th>
+            </tr>
+            <tr style="text-align:center; font-weight:bold">
+                <th>Hãng sản xuất</th>
+                <th>@ViewBag.hang</th>
+            </tr>
+            <tr style="text-align:center; font-weight:bold">
+                <th>Loại nước hoa</th>
+                <th>@ViewBag.loai</th>
+            </tr>
+            <tr style="text-align:center; font-weight:bold">
+                <th>Nồng Độ</th>
+                <th>@Model.NongDo</th>
+            </tr>
+            <tr style="text-align:center; font-weight:bold">
+                <th>Nhóm hương</th>
+                <th>@Model.NhomHuong</th>
+            </tr>
+            <tr style="text-align:center; font-weight:bold">
+                <th>Phong cách</th>
+                <th>@Model.PhongCach</th>
+            </tr>
+            <tr style="text-align:center; font-weight:bold">
+                <th>Người sáng lập</th>
+                <th>@Model.NguoiSL</th>
+            </tr>
+            <tr style="text-align:center; font-weight:bold">
+                <th>Năm sản xuất</th>
+                <th>@Model.NamSX</th>
+            </tr>
+            <tr style="text-align:center; font-weight:bold">
+                <th>Xuất xứ</th>
+                <th>@Model.XuatXu</th>
+            </tr>
+        </table>
+    </div>
+</div>
+<style>
+    .bt {
+        padding-top: 15px;
+        margin: auto;
+    }
+
+    div.table {
+        float: left;
+        position: relative;
+        width: 100%;
+        margin-top: 18px;
+    }
+
+    table.listing {
+        border-bottom: 1px solid #201b3c;
+        width: 100%;
+        padding: 0;
+        margin: auto;
+        border: 1px solid #201b3c;
+    }
+
+        table.listing th {
+            border-top: 0 !important;
+            margin: auto;
+        }
+
+            table.listing th.full {
+                border-left: 0;
+                border-right: 0 !important;
+                text-align: left;
+                text-transform: uppercase;
+            }
+
+    div.table img.left {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    div.table img.right {
+        position: absolute;
+        top: 0;
+        right: 1px;
+    }
+    /* table styles */
+    table.listing td,
+    table.listing th {
+        margin: auto;
+        border: 1px solid #201b3c;
+        text-align: center;
+    }
+
+    table.listing th {
+        margin: auto;
+        background: #fff;
+        color: #000;
+        padding: 5px;
+    }
+
+    table.listing td {
+        background: #201b3c;
+        color: #fff;
+        padding: 3px 5px;
+    }
+
+    table.listing .bg td {
+        background: #ff00dc;
+    }
+
+    table.listing .white td {
+        background: #000;
+    }
+
+    table.listing .first {
+        border-left: 0px solid #ff00dc;
+        text-align: left;
+    }
+
+    table.listing .last {
+        border-right: 0px solid #ff00dc;
+    }
+
+    table.listing th.first {
+        background: #ff00dc url(../img/bg-th-left.gif) no-repeat left top;
+        border-left: 0;
+    }
+
+    table.listing th.last {
+        background: #ff00dc url(../img/bg-th-right.gif) no-repeat right top;
+        border-right: 0;
+    }
+
+    table.listing .style1 {
+        font-weight: bold;
+        color: #FF7A00;
+    }
+
+    table.listing .style2 {
+        font-weight: bold;
+        padding-left: 16px;
+    }
+
+    table.listing .style3 {
+        padding-left: 25px;
+    }
+
+    table.listing .style4 {
+        padding-left: 35px;
+    }
+
+    table.form .last {
+        padding: 1px 0 1px 5px;
+        text-align: left;
+    }
+
+    table.form th,
+    table.form td {
+        padding-left: 10px;
+    }
+
+    table.form input.text {
+        width: 262px;
+    }
+</style>
