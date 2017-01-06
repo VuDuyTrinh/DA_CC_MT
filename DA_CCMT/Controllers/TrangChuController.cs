@@ -79,6 +79,10 @@ namespace DA_CCMT.Controllers
             }
             return tv;
         }
+        public ActionResult LienHe()
+        {
+            return View();
+        }
         public ActionResult TuVan(int? pape)
         {
             List<tuvan> tv = laytuvan();
