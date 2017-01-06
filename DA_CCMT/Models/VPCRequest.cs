@@ -14,8 +14,7 @@ using System.Web.UI.HtmlControls;
 using System.Security.Cryptography;
 using System.Net;
 using System.IO;
-
-namespace webfinal.Models
+namespace DA_CCMT.Models
 {
     public class VPCRequest
     {
