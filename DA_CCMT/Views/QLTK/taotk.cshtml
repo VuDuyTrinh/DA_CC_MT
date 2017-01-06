@@ -10,6 +10,7 @@
 {
     @Html.AntiForgeryToken()
     @Html.ValidationSummary(true)
+<<<<<<< HEAD
 <form>
     <div class="group">
         <hr class="soft" style="margin-bottom : 5px;" />
@@ -49,4 +50,45 @@
     <hr class="soft" style="margin-bottom : 5px;" />
     <input class="btn btn-large btn-success" type="submit" value="Tạo Tài khoản" style="margin-top:10px; margin-left:400px; width: 150px; " />
 </form>
+=======
+    <form>
+        <div class="group">
+            <hr class="soft" style="margin-bottom : 5px;" />
+            <div class="col-md-2"> </div>
+            <div class="col-md-2"><p>Họ Tên:</p></div>
+            <div class="col-md-4"><input type="text" name="HoTen" style="width:300px;" /></div>
+        </div>
+        <br />
+        <div class="group">
+            <hr class="soft" style="margin-bottom : 5px;" />
+            <div class="col-md-2"> </div>
+            <div class="col-md-2"><p>Tên Tài khoản:</p></div>
+            <div class="col-md-4"><input type="text" name="TenTK" style="width:300px;" /></div>
+        </div>
+        <br />
+        <div class="group">
+            <hr class="soft" style="margin-bottom : 5px;" />
+            <div class="col-md-2"> </div>
+            <div class="col-md-2"><p>Mật khẩu:</p></div>
+            <div class="col-md-4"><input type="password" name="MK" style="width:300px;" /></div>
+        </div>
+        <br />
+        <div class="group">
+            <hr class="soft" style="margin-bottom : 5px;" />
+            <div class="col-md-2"> </div>
+            <div class="col-md-2"><p>Nhập lại mật khẩu:</p></div>
+            <div class="col-md-4"><input type="password" name="MK2" style="width:300px;" /></div>
+        </div>
+        <br />
+        <h3>chọn quyền</h3>
+        <hr class="soft" style="margin-bottom : 5px;" />
+        @foreach (var i in Model)
+        {
+
+            <input type="checkbox" name="@i.TenCN" value="@i.TenCN" style="margin-left:200px; margin-bottom: 10px;font-size:20px;">@i.TenCN<br />
+        }
+        <hr class="soft" style="margin-bottom : 5px;" />
+        <input class="btn btn-large btn-success" type="submit" value="Tạo Tài khoản" style="margin-top:10px; margin-left:400px; width: 150px; " />
+    </form>
+>>>>>>> origin/master
 }

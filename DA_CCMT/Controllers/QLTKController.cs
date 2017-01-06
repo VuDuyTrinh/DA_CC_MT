@@ -18,6 +18,7 @@ namespace DA_CCMT.Controllers
             {
                 return RedirectToAction("Login", "Admin");
             }
+<<<<<<< HEAD
             int co = 0;
             String tencn = "";
             List<CnAd> cn = Session["CN"] as List<CnAd>;
@@ -34,6 +35,24 @@ namespace DA_CCMT.Controllers
 
                 return RedirectToAction("Loi", "Admin");
             }
+=======
+            //int co = 0;
+            //String tencn = "";
+            //List<CnAd> cn = Session["CN"] as List<CnAd>;
+            //foreach (CnAd i in cn)
+            //{
+            //    if (i.iAction == "QLTK" && i.iController == "QLTK")
+            //    {
+            //        tencn = i.iTenCN;
+            //        co = 1;
+            //    }
+            //}
+            //if (co == 0)
+            //{
+
+            //    return RedirectToAction("Loi", "Admin");
+            //}
+>>>>>>> origin/master
             var ds = from a in data.Admins select a;
             return View(ds);
         }
@@ -43,6 +62,7 @@ namespace DA_CCMT.Controllers
             {
                 return RedirectToAction("Login", "Admin");
             }
+<<<<<<< HEAD
             int co = 0;
             String tencn = "";
             List<CnAd> cn = Session["CN"] as List<CnAd>;
@@ -59,6 +79,24 @@ namespace DA_CCMT.Controllers
 
                 return RedirectToAction("Loi", "Admin");
             }
+=======
+            //int co = 0;
+            //String tencn = "";
+            //List<CnAd> cn = Session["CN"] as List<CnAd>;
+            //foreach (CnAd i in cn)
+            //{
+            //    if (i.iAction == "QLTK" && i.iController == "QLTK")
+            //    {
+            //        tencn = i.iTenCN;
+            //        co = 1;
+            //    }
+            //}
+            //if (co == 0)
+            //{
+
+            //    return RedirectToAction("Loi", "Admin");
+            //}
+>>>>>>> origin/master
             Admin a = data.Admins.SingleOrDefault(n => n.TenTK == id);
             ViewBag.TenTK = a.TenTK;
             ViewBag.HoTen = a.HoTen;
@@ -78,6 +116,7 @@ namespace DA_CCMT.Controllers
             {
                 return RedirectToAction("Login", "Admin");
             }
+<<<<<<< HEAD
             int co = 0;
             String tencn = "";
             List<CnAd> cn = Session["CN"] as List<CnAd>;
@@ -94,6 +133,24 @@ namespace DA_CCMT.Controllers
 
                 return RedirectToAction("Loi", "Admin");
             }
+=======
+            //int co = 0;
+            //String tencn = "";
+            //List<CnAd> cn = Session["CN"] as List<CnAd>;
+            //foreach (CnAd i in cn)
+            //{
+            //    if (i.iAction == "QLTK" && i.iController == "QLTK")
+            //    {
+            //        tencn = i.iTenCN;
+            //        co = 1;
+            //    }
+            //}
+            //if (co == 0)
+            //{
+
+            //    return RedirectToAction("Loi", "Admin");
+            //}
+>>>>>>> origin/master
             var a = from b in data.ChucNangs select b;
             return View(a);
         }
