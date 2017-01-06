@@ -63,6 +63,10 @@ namespace DA_CCMT.Controllers
             var sp = from a in data.SanPhams where (a.MaHang == id) select a;
             return View(sp.ToPagedList(SoTrang, SoSP));
         }
+        public ActionResult ShowRoom()
+        {
+            return View();
+        }
         public List<tuvan> laytuvan()
         {
             List<tuvan> tv = new List<tuvan>();
