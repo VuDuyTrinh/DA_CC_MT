@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewBag.Title = "ddh";
+    Layout = "~/Views/Shared/LayoutAdmin.cshtml";
+}
+    <script src="~/canvasjs-1.9.2/canvasjs.min.js"></script>
+    <script src="~/canvasjs-1.9.2/jquery.canvasjs.min.js"></script>
+    <script type="text/javascript">
+        window.onload = function () {
+            var chart = new CanvasJS.Chart("bd",
+            {
+                title: {
+                    text: "Biểu đồ"
+                },
+                dataPointWidth:60,
+                data: [
+                {
+                    type: "column", //change type to bar, line, area, pie, etc
+                    indexLabelLineThickness:2,
+                    dataPoints: [
+                        { label: "Đã thanh toán", y: @ViewBag.DDT},
+                        { label: "Đã giao hàng", y: @ViewBag.DGH},
+                        { label: "Đã thanh toán và giao hàng", y:@ViewBag.DTTGH},
+                        { label: "Chưa duyệt", y: @ViewBag.KTTGH}
+
+                    ]
+                }
+                ]
+            });
+
+            chart.render();
+        }
+    </script>
+    <h2>Thống kê đơn đặt hàng</h2>
+    <div id="bd" style="height: 300px; width: 100%;"></div>
