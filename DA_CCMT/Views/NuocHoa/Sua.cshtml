@@ -1,0 +1,109 @@
+﻿
+@{
+    ViewBag.Title = "Sua";
+    Layout = "~/Views/Shared/LayoutAdmin.cshtml";
+}
+<h3>Sửa thông tin sản phẩm</h3>
+<a style="color:red">@ViewBag.Loi</a>
+@using (Html.BeginForm("Sua", "NuocHoa", FormMethod.Post, new { @enctype = "multipart/form-data"}))
+{
+   @Html.AntiForgeryToken()
+    <div class="form-horizontal">
+    @Html.ValidationSummary(true)
+    <div class="group">
+        <hr class="soft" style="margin-bottom : 5px;" />
+        <div class="col-md-2"> </div>
+        <div class="col-md-2"><p>Tên nước hoa:</p></div>
+        <div class="col-md-4"><input type="text" name="TenNH" style="width:300px;" value="@Model.TenNH" /></div>
+    </div>
+    <br />
+    <div class="group 2">
+        <hr class="soft" style="margin-bottom : 5px;" />
+        <div class="col-md-2"> </div>
+        <div class="col-md-2"><p>Giá:</p></div>
+        <div class="col-md-4"><input type="text" name="Gia" style="width:300px;" value="@Model.Gia"/></div>
+    </div>
+    <br />
+    <div class="group 2">
+        <hr class="soft" style="margin-bottom : 5px;" />
+        <div class="col-md-2"> </div>
+        <div class="col-md-2"><p>Nồng Độ :</p></div>
+        <div class="col-md-4"><input type="text" name="NongDo" style="width:300px;" value="@Model.NongDo"/></div>
+    </div>
+    <br />
+    <div class="group 2">
+        <hr class="soft" style="margin-bottom : 5px;" />
+        <div class="col-md-2"> </div>
+        <div class="col-md-2"><p>Nhóm Hương:</p></div>
+        <div class="col-md-4"><input type="text" name="NhomHuong" style="width:300px;" value="@Model.NhomHuong"/></div>
+    </div>
+    <br />
+    <div class="group 2">
+        <hr class="soft" style="margin-bottom : 5px; " />
+        <div class="col-md-2"> </div>
+        <div class="col-md-2"><p>Phong cách:</p></div>
+        <div class="col-md-4"><input type="text" name="PhongCach" style="width:300px;" value="@Model.PhongCach"/></div>
+    </div>
+    <br />
+    <div class="group 2">
+        <hr class="soft" style="margin-bottom : 5px;" />
+        <div class="col-md-2"> </div>
+        <div class="col-md-2"><p>Người Sáng Lập:</p></div>
+        <div class="col-md-4"><input type="text" name="NguoiSL" style="width:300px;" value="@Model.NguoiSL" /></div>
+    </div>
+    <br />
+    <div class="group 2">
+        <hr class="soft" style="margin-bottom : 5px; " />
+        <div class="col-md-2"> </div>
+        <div class="col-md-2"><p>Năm Sản Xuất:</p></div>
+        <div class="col-md-4"><input type="text" name="NamSX" style="width:300px;" value="@Model.NamSX"/></div>
+    </div>
+    <br />
+    <div class="group 2">
+        <hr class="soft" style="margin-bottom : 5px;" />
+        <div class="col-md-2"> </div>
+        <div class="col-md-2"><p>Xuất Xứ:</p></div>
+        <div class="col-md-4"><input type="text" name="XuatXu" style="width:300px;" value="@Model.XuatXu"/></div>
+    </div>
+    <br />
+    <div class="group 2">
+        <hr class="soft" style="margin-bottom : 5px;" />
+        <div class="col-md-2"> </div>
+        <div class="col-md-2"><p>hình:</p></div>
+        <input id="Hinh" type="file" name="fileUpload" />
+        <img src="@Url.Content("~/hinhsp/" + @Model.hinh)" width="200" />
+        @ViewBag.ThongBao
+    </div>
+    <br />
+    <div class="group 2">
+        <hr class="soft" style="margin-bottom : 5px;" />
+        <div class="col-md-2"> </div>
+        <div class="col-md-2"><p>Loại Nước Hoa:</p></div>
+        @Html.DropDownList("MaLoai")
+    </div>
+    <br />
+    <div class="group 2">
+        <hr class="soft" style="margin-bottom : 5px;" />
+        <div class="col-md-2"> </div>
+        <div class="col-md-2"><p>Hãng Nước Hoa:</p></div>
+        @Html.DropDownList("MaHang")
+    </div>
+    <br />
+    <div class="group 2">
+        <hr class="soft" style="margin-bottom : 5px;" />
+        <div class="col-md-2"> </div>
+        <div class="col-md-2"><p>Mô Tả:</p></div>
+        <div class="col-md-4"><input type="text" name="MoTa" style="width:300px;" value="@Model.MoTa" /></div>
+    </div>
+        <br />
+    <div class="container">
+        <hr class="soft" style="margin-bottom : 5px;" />
+        <div class="col-md-2"> </div>
+        <div class="col-md-2"> </div>
+        <div class="col-md-6"><input class="btn btn-large btn-success" type="submit" value="Sửa" style="margin-top:10px; float: right; width: 150px; " /></div>
+
+    </div>
+        </div>
+
+}
+
