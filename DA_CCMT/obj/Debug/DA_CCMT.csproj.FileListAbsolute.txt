@@ -256,3 +256,6 @@ C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\bin\Microsoft.Owin.Security.MicrosoftAcc
 C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\obj\Debug\DA_CCMT.csprojResolveAssemblyReference.cache
 C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\obj\Debug\DA_CCMT.dll
 C:\Users\CamNhung\Desktop\NHOM6\DA_CCMT\obj\Debug\DA_CCMT.pdb
+D:\DA_CC_MT\DA_CCMT\obj\Debug\DA_CCMT.csprojResolveAssemblyReference.cache
+D:\DA_CC_MT\DA_CCMT\obj\Debug\DA_CCMT.dll
+D:\DA_CC_MT\DA_CCMT\obj\Debug\DA_CCMT.pdb
