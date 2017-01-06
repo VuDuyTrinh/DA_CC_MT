@@ -16,7 +16,6 @@ namespace DA_CCMT.Controllers
             //nếu cờ =1 thì lấy danh sách các đơn đặt hàng
             var ds = from a in data.DonDatHangs select a;
             return View(ds);
-
         }
     }
 }
