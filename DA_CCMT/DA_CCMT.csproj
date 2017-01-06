@@ -209,11 +209,9 @@
     <Compile Include="Controllers\GioHangController.cs" />
     <Compile Include="Controllers\HangController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\KhachHangController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\NuocHoaController.cs" />
     <Compile Include="Controllers\QLDDHController.cs" />
-    <Compile Include="Controllers\QLTKController.cs" />
     <Compile Include="Controllers\ThongKeController.cs" />
     <Compile Include="Controllers\TrangChuController.cs" />
     <Compile Include="Controllers\TuVanController.cs" />
@@ -520,14 +518,7 @@
     <Content Include="Views\TrangChu\SpHot.cshtml" />
     <Content Include="Views\TrangChu\SpHang.cshtml" />
     <Content Include="Views\QLDDH\Index.cshtml" />
-<<<<<<< HEAD
-    <Content Include="Views\KhachHang\Index.cshtml" />
-    <Content Include="Views\QLTK\Index.cshtml" />
-    <Content Include="Views\QLTK\Chitiet.cshtml" />
-    <Content Include="Views\QLTK\taotk.cshtml" />
-=======
     <Content Include="Views\QLDDH\DsCheck.cshtml" />
->>>>>>> origin/master
   </ItemGroup>
   <ItemGroup>
     <Folder Include="admin\" />

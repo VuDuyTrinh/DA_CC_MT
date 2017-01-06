@@ -85,13 +85,5 @@ namespace DA_CCMT.Controllers
         {
             return View();
         }
-        public ActionResult admin()
-        {
-            if (Session["Admin"] == null)
-            {
-                return RedirectToAction("Login", "Admin");
-            }
-            return View();
-        }
-    }
+	}
 }
