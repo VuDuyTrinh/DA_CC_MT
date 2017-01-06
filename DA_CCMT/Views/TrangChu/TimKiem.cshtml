@@ -1,0 +1,36 @@
+﻿@using webfinal.Models
+@using PagedList.Mvc;
+@model PagedList.PagedList<SanPham>
+@{
+    ViewBag.Title = "TimKiem";
+    Layout = "~/Views/Shared/layoutchung.cshtml";
+}
+
+<br />
+<h3 style="margin-left: 25px;">Danh sách sản phẩm bạn muốn tìm</h3>
+<br />
+<ul class="thumbnails">
+    @foreach (var item in Model)
+    {
+        <li class="span3">
+            <div class="thumbnail">
+                <i class="tag"></i>
+                <a href="@Url.Action("chitiet","TrangChu", new { id = item.MaNH })"><img src="@Url.Content("~/hinhsp/" + @item.hinh)" width="300"></a>
+                <div class="caption" style="height: 130px;">
+                    <h5 style="height: 60px">@item.TenNH</h5>
+                    <h4><a class="btn" href="@Url.Action("ThemGioHang", "GioHang", new { @iMANH=@item.MaNH , @strURL=Request.Url.ToString(), @sl=1})">Thêm Vào Giỏ</a> <span class="pull-right">@String.Format("{0:0,0 VNĐ}", @item.Gia).Replace(",", ".")</span></h4>
+                </div>
+            </div>
+        </li>
+    }
+</ul>
+Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber)/@Model.PageCount
+<div class="menutrang">
+    @Html.PagedListPager(Model, page => Url.Action("Index", new { page = page }))
+</div>
+<style>
+    .menutrang li {
+        display: inline;
+    }
+</style>
+
