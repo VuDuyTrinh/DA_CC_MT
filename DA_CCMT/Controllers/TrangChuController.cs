@@ -39,7 +39,92 @@ namespace DA_CCMT.Controllers
             var sp = (from a in data.SanPhams select a).Skip(i).Take(4); //Lấy 4 sản phẩm để hiển thị trong carousel slide
             return PartialView(sp); //Đây là PartialView của LayoutUser
         }
+        [HttpPost]
+        public ActionResult DangNhap(FormCollection conllection, String strURL)
+        {
+            var tk = conllection["inputEmail"];
+            var mk = conllection["inputPassword"];
+            KhachHang kh = data.KhachHangs.SingleOrDefault(n => n.TaiKhoan == tk && n.MatKhau == mk);
+            if (kh != null)
+            {
+                Session["TaiKhoan"] = kh;
+                return Redirect(strURL);
+            }
+            else
+            {
+                ViewData["loi"] = "tên tk hoặc mật khẩu sai";
+                return Redirect(strURL);
+            }
+        }
+        public ActionResult dangky()
+        {
+            return View();
+        }
+        [HttpPost]
+        public ActionResult dangky(FormCollection collection, KhachHang kh)
+        {
+            var hoten = collection["HoTen"];
+            var tk = collection["tk"];
+            var mk = collection["mk"];
+            var mk2 = collection["mk2"];
+            var ngaysinh = String.Format("{0:MM/dd/yyyy}", collection["Ngaysinh"]);
+            var diachi = collection["DC"];
+            var sdt = collection["sdt"];
+            var email = collection["email"];
+            int co = 1;
+            if (String.IsNullOrEmpty(hoten))
+            {
+                ViewData["loi1"] = " *";
+                co = 0;
 
+            }
+            if (String.IsNullOrEmpty(tk))
+            {
+                ViewData["loi2"] = " *";
+                co = 0;
+            }
+            if (String.IsNullOrEmpty(mk))
+            {
+                ViewData["loi3"] = " *";
+                co = 0;
+            }
+            if (String.IsNullOrEmpty(mk2))
+            {
+                ViewData["loi4"] = " *";
+                co = 0;
+            }
+
+            if (String.IsNullOrEmpty(sdt))
+            {
+                ViewData["loi7"] = " *";
+                co = 0;
+            }
+            if (String.IsNullOrEmpty(email))
+            {
+                ViewData["loi8"] = " *";
+                co = 0;
+            }
+            if (mk != mk2)
+            {
+                ViewData["loi4"] = "( nhập lại mật khẩu sai)";
+                co = 0;
+            }
+            if (co == 1)
+            {
+                kh.TenKH = hoten;
+                kh.TaiKhoan = tk;
+                kh.MatKhau = mk;
+                kh.NgaySinh = DateTime.Parse(ngaysinh);
+                kh.DiaChi = diachi;
+                kh.DienThoai = sdt;
+                kh.Email = email;
+                data.KhachHangs.InsertOnSubmit(kh);
+                data.SubmitChanges();
+                Session["TaiKhoan"] = kh;
+                return RedirectToAction("Index");
+            }
+            return this.dangky();
+        }
 
         public ActionResult ChoNam(int? pape)//trang sản phẩm cho nam
         {
