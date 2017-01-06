@@ -1,0 +1,74 @@
+﻿
+@{
+    ViewBag.Title = "dangky";
+    Layout = "~/Views/Shared/layoutchung.cshtml";
+}
+<ul class="breadcrumb">
+    <li><a href="index.html">Home</a> <span class="divider">/</span></li>
+    <li class="active">Registration</li>
+</ul>
+<h3> Đăng ký</h3>
+<div class="well">
+    <form class="form-horizontal" action="@Url.Action("DangKy", "TrangChu")" method="post">
+        <h4>Hãy điền đầy đủ thông tin</h4>
+            <div class="control-group">
+                <label class="control-label" for="inputFname1">Họ Tên <sup>*</sup></label>
+                <div class="controls">
+                    <input type="text" id="inputFname1" placeholder="Họ Tên" name="HoTen"> <a style="color:red">@ViewData["loi1"]</a>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label" for="inputLnam">Tên tài khoản <sup>*</sup></label>
+                <div class="controls">
+                    <input type="text" id="inputLnam" placeholder="Tên tài khoản" name="TK"> <a style="color:red">@ViewData["loi2"]</a>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label" for="inputPassword">mật khẩu <sup>*</sup></label>
+                <div class="controls">
+                    <input type="text" id="input_email" placeholder="mật khẩu" name="MK"> <a style="color:red">@ViewData["loi3"]</a>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label" for="inputPassword1">nhập lại mật khẩu<sup>*</sup></label>
+                <div class="controls">
+                    <input type="password" id="inputPassword1" placeholder="nhập lại mật khẩu" name="MK2"> <a style="color:red">@ViewData["loi4"]</a>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">Ngày sinh<sup>*</sup></label>
+                <div class="controls">
+                    <input type="date" id="days" placeholder="ngày sinh" name="Ngaysinh"> <a style="color:red">@ViewData["loi5"]</a>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label" for="company">Số điện thoại </label>
+                <div class="controls">
+                    <input type="text" id="company" placeholder="Số điện thoại" name="SDT" /> <a style="color:red">@ViewData["loi7"]</a>
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label class="control-label" for="address">Địa chỉ<sup>*</sup></label>
+                <div class="controls">
+                    <input type="text" id="address" placeholder="Địa chỉ" name="DC" /> <a style="color:red">@ViewData["loi6"]</a>
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label class="control-label" for="input_email">Email<sup>*</sup></label>
+                <div class="controls">
+                    <input type="text" id="address2" placeholder="Email" name="Email" /> <a style="color:red">@ViewData["loi8"]</a>
+                </div>
+            </div>
+            <div class="control-group">
+                <div class="controls">
+                    <input class="btn btn-large btn-success" type="submit" value="Đăng Ký" />
+                </div>
+            </div>
+        
+    </form>
+
+</div>
+
+
