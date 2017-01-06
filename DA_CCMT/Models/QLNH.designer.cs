@@ -78,7 +78,7 @@ namespace DA_CCMT.Models
     #endregion
 		
 		public QLNHDataContext() : 
-				base(global::System.Configuration.ConfigurationManager.ConnectionStrings["QLWEBNUOCHOAConnectionString2"].ConnectionString, mappingSource)
+				base(global::System.Configuration.ConfigurationManager.ConnectionStrings["QLWEBNUOCHOAConnectionString3"].ConnectionString, mappingSource)
 		{
 			OnCreated();
 		}
