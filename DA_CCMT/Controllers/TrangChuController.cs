@@ -67,6 +67,10 @@ namespace DA_CCMT.Controllers
         {
             return View();
         }
+        public ActionResult ShowRoom()
+        {
+            return View();
+        }
         public List<tuvan> laytuvan()
         {
             List<tuvan> tv = new List<tuvan>();
