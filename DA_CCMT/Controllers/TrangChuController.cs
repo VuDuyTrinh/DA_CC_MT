@@ -125,6 +125,11 @@ namespace DA_CCMT.Controllers
             }
             return this.dangky();
         }
+        public ActionResult chitiet(int id)
+        {
+            var ct = (from t in data.SanPhams where (t.MaNH == id) select t);
+            return View(ct.SingleOrDefault());
+        }
 
         public ActionResult ChoNam(int? pape)//trang sản phẩm cho nam
         {
