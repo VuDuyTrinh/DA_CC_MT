@@ -17,7 +17,6 @@ namespace DA_CCMT.Controllers
             {
                 return RedirectToAction("Login", "Admin");
             }
-<<<<<<< HEAD
             int co = 0;
             String tencn = "";
             List<CnAd> cn = Session["CN"] as List<CnAd>;
@@ -34,26 +33,8 @@ namespace DA_CCMT.Controllers
 
                 return RedirectToAction("Loi", "Admin");
             }
-=======
-            //int co = 0;
-            //String tencn = "";
-            //List<CnAd> cn = Session["CN"] as List<CnAd>;
-            //foreach (CnAd i in cn)
-            //{
-            //    if (i.iAction == "KhachHang" && i.iController == "KhachHang")
-            //    {
-            //        tencn = i.iTenCN;
-            //        co = 1;
-            //    }
-            //}
-            //if (co == 0)
-            //{
-
-            //    return RedirectToAction("Loi", "Admin");
-            //}
->>>>>>> origin/master
             var ds = from a in data.KhachHangs select a;
             return View(ds);
         }
-	}
+    }
 }
