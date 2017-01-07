@@ -11,6 +11,7 @@ namespace DA_CCMT.Controllers
     {
         //
         // GET: /QLTK/
+        //Quản lý tài khoản
         QLNHDataContext data = new QLNHDataContext();
         public ActionResult Index()
         {
@@ -72,6 +73,7 @@ namespace DA_CCMT.Controllers
             return View(chucnang);
         }
         [HttpGet]
+        //Tạo tài khoản mới
         public ActionResult taotk()
         {
             if (Session["Admin"] == null)
@@ -98,8 +100,10 @@ namespace DA_CCMT.Controllers
             return View(a);
         }
         [HttpPost]
+        //THông tin tài khoản mới
         public ActionResult taotk(FormCollection collection)
         {
+            
             var a = from b in data.ChucNangs select b;
             var tentk = collection["TenTK"];
             var hoten = collection["HoTen"];
