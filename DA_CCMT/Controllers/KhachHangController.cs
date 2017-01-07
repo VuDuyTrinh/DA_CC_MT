@@ -13,7 +13,6 @@ namespace DA_CCMT.Controllers
         QLNHDataContext data = new QLNHDataContext();
         public ActionResult Index()
         {
-            //Đăng nhập
             if (Session["Admin"] == null)
             {
                 return RedirectToAction("Login", "Admin");
